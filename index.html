@@ -89,6 +89,7 @@
         min-height: 100vh;
       }
       article{
+
         max-width: 900px;
         width:100%;
         height:100vh;
@@ -128,6 +129,25 @@
       }
       .visible.right{
         margin-right:0;
+      }
+      article div button{
+        margin-top:33px;
+        border-radius: 50%;
+        width:90px;
+        height:90px;
+        background: red;
+        color:white;
+        text-shadow: 1px 1px black;
+      }
+        article div button:hover{
+          background:#f94b4b;
+        }
+      article div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        max-width: 900px;
       }
     </style>
     <!-- Yandex.Metrika counter -->
@@ -175,6 +195,9 @@
         <a href="https://qucu.ru"  class='box'>去 粗</a>
 
         <p class='box right'>И мы тут чтобы нагрубить этому безумному миру, с его многофункциональной, продвинутой шизой. Старческим маразмом и всем остальным … Этот коммунистический список, можно было бы описывать бесконечно! Но у нас не так много времени, главная цель одна! Все мы тут потому что нам нужен: “лендинг по макету из фигмы, с SEO оптимизацией и запуском контекстной рекламы, для сверх шикарной лидогенерации!</p>
+        <div>
+          <button type="button" name="button" class='box right'>ЗАКАЗАТЬ!!!</button>
+        </div>
       </article>
     </main>
     <footer>
@@ -188,6 +211,10 @@
   document.querySelector('header > p > strong').addEventListener('click',()=>{
     window.location.href='tel:+79528885656';
   });
+document.querySelector('button.box').addEventListener('click',()=>{
+  window.location.href='tel:+79528885656';
+});
+
 
 //intersection observer
   const scrollImations = (entries, observer) => {
